@@ -1,0 +1,39 @@
+.register-btn {
+  padding: rem(11px) rem(20px);
+  padding-left: rem(30px);
+  color: $white;
+  position: relative;
+  font-size: rem(13px);
+  font-weight: 400;
+  width: rem(196px);
+  cursor: pointer;
+
+  &__icon {
+    width: rem(17px);
+    height: rem(17px);
+    position: absolute;
+    left: rem(9px);
+    top: 50%;
+    transform: translateY(-50%);
+    fill: $white;
+  }
+
+  &--fb {
+    background-color: $fb-btn-color;
+
+    &:hover {
+      background-color: adjust-color($color: $fb-btn-color, $lightness: -3%);
+    }
+  }
+
+  &--linkedin {
+    background-color: $linkedin-btn-color;
+
+    &:hover {
+      background-color: adjust-color(
+        $color: $linkedin-btn-color,
+        $lightness: -3%
+      );
+    }
+  }
+}

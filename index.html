@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>iintoo — invest together</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="block">
+        <div class="block__bg">
+          <div class="logo">
+            <svg class="logo__image">
+              <use href="./img/sprite.svg#logo"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="block__main">
+          <h1 class="block__title">Get iintoo it today</h1>
+          <h3 class="block__subtitle">
+            There is not charge or obligation upon registration.
+          </h3>
+          <div class="block__register-buttons">
+            <button class="register-btn register-btn--fb">
+              <svg class="register-btn__icon">
+                <use href="./img/sprite.svg#facebook"></use>
+              </svg>
+              Register with Facebook
+            </button>
+            <button class="register-btn register-btn--linkedin">
+              <svg class="register-btn__icon">
+                <use href="./img/sprite.svg#linkedin"></use>
+              </svg>
+              Register with LinkedIn
+            </button>
+          </div>
+          <div class="block__sep">
+            <span class="block__sep-text">or</span>
+          </div>
+          <form action="POST" class="block-form">
+            <div class="block-form__inputs">
+              <div class="block-form__input-wrap">
+                <div class="block-form__input-name">Email</div>
+                <input
+                  type="email"
+                  name="email"
+                  id="i-email"
+                  class="block-form__input"
+                />
+              </div>
+              <div class="block-form__input-wrap">
+                <div class="block-form__input-name">Phone</div>
+                <input
+                  type="phone"
+                  name="phone"
+                  id="i-phone"
+                  class="block-form__input"
+                />
+              </div>
+            </div>
+            <h2 class="block-form__title">What type of investor are you?</h2>
+            <h4 class="block-form__subtitle">
+              Select the type of investor you are below.
+            </h4>
+            <ul class="block-form__radio-list">
+              <li class="block-form__radio-item">
+                <input
+                  type="radio"
+                  name="investor-type"
+                  id="r-individual"
+                  value="individual"
+                  class="block-form__radio-input"
+                  checked
+                />
+                <label for="r-individual" class="block-form__radio"></label>
+                <div class="block-form__radio-wrap">
+                  <label for="r-individual" class="block-form__radio-label">
+                    Individual
+                    <button type="button" class="block-form__radio-hint-btn">
+                      i
+                    </button>
+                    <div class="block-form__hint">
+                      <span class="block-form__hint-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reiciendis officia quas provident non sequi voluptas,
+                        saepe asperiores praesentium possimus rem!
+                      </span>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li class="block-form__radio-item">
+                <input
+                  type="radio"
+                  name="investor-type"
+                  id="r-business"
+                  value="business"
+                  class="block-form__radio-input"
+                />
+                <label for="r-business" class="block-form__radio"></label>
+                <div class="block-form__radio-wrap">
+                  <label for="r-business" class="block-form__radio-label">
+                    Business
+                    <button type="button" class="block-form__radio-hint-btn">
+                      i
+                    </button>
+                    <div class="block-form__hint">
+                      <span class="block-form__hint-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reiciendis officia quas provident non sequi voluptas,
+                        saepe asperiores praesentium possimus rem!
+                      </span>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li class="block-form__radio-item">
+                <input
+                  type="radio"
+                  name="investor-type"
+                  id="r-ira"
+                  value="ira"
+                  class="block-form__radio-input"
+                />
+                <label for="r-ira" class="block-form__radio"></label>
+                <div class="block-form__radio-wrap">
+                  <label for="r-ira" class="block-form__radio-label">
+                    IRA
+                    <button type="button" class="block-form__radio-hint-btn">
+                      i
+                    </button>
+                    <div class="block-form__hint">
+                      <span class="block-form__hint-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reiciendis officia quas provident non sequi voluptas,
+                        saepe asperiores praesentium possimus rem!
+                      </span>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li class="block-form__radio-item">
+                <input
+                  type="radio"
+                  name="investor-type"
+                  id="r-trust"
+                  value="trust"
+                  class="block-form__radio-input"
+                />
+                <label for="r-trust" class="block-form__radio"></label>
+                <div class="block-form__radio-wrap">
+                  <label for="r-trust" class="block-form__radio-label">
+                    Trust
+                    <button type="button" class="block-form__radio-hint-btn"
+                      >i</button
+                    >
+                    <div class="block-form__hint">
+                      <span class="block-form__hint-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reiciendis officia quas provident non sequi voluptas,
+                        saepe asperiores praesentium possimus rem!
+                      </span>
+                    </div>
+                  </label>
+                </div>
+              </li>
+            </ul>
+            <div class="block-form__terms">
+              <input
+                type="checkbox"
+                name="terms"
+                id="c-terms"
+                class="block-form__checkbox-input"
+              />
+              <label for="c-terms" class="block-form__checkbox"></label
+              ><label for="c-terms" class="block-form__checkbox-label">
+                I agree to the terms and receiving notifications from iintoo
+                <a href="#" class="link">View full terms</a>
+              </label>
+            </div>
+            <button type="submit" class="block-form__submit-btn btn">
+              Create Account
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

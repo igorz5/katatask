@@ -1,0 +1,13 @@
+.btn {
+  padding: rem(12px) rem(56px);
+  background-color: $btn-color;
+  border-radius: 4px;
+  color: $white;
+  font-size: rem(14px);
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    background-color: adjust-color($color: $btn-color, $lightness: -3%);
+  }
+}

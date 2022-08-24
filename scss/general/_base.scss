@@ -1,0 +1,99 @@
+// Variables
+
+$bg-color: #eff6ff;
+$text-primary: #2a4a5c;
+$fb-btn-color: #255a9b;
+$linkedin-btn-color: #0076b6;
+$btn-color: #3698fb;
+$focus-color: #3698fb;
+$link-color: #3698fb;
+$grey-500: #7b8a92;
+$grey-600: #96a5b1;
+$grey-700: #afafaf;
+$grey-800: #eeeeee;
+$white: #ffffff;
+
+$base-fz: 16px;
+
+// Functions
+
+@function rem($size, $base-fz: $base_fz) {
+  @return calc($size / $base-fz) + 0rem;
+}
+
+// Mixins
+
+@mixin screen-large {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin screen-medium {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin screen-small {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+// General
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+html {
+  font-size: $base-fz;
+
+  @include screen-medium {
+    font-size: $base-fz - 1px;
+  }
+}
+
+body {
+  color: $white;
+  background-color: $bg-color;
+  font-family: "Barlow", sans-serif;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+label {
+  font-family: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
