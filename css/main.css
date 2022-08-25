@@ -12,12 +12,12 @@
 }
 
 .main {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
+}
+
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
 }
 
 html {
@@ -57,21 +57,33 @@ a {
 }
 
 .block {
-  background-color: #ffffff;
+  min-height: 100vh;
   display: flex;
-  max-width: 1152px;
-  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1);
-}
-@media screen and (max-width: 1200px) {
-  .block {
-    width: 90%;
-  }
+  align-items: center;
+  padding: 2.25rem;
 }
 @media screen and (max-width: 992px) {
   .block {
+    padding: 0;
+    flex-direction: column;
+  }
+}
+.block__container {
+  height: 90vh;
+  min-height: 800px;
+  width: 100%;
+  max-width: 1152px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 992px) {
+  .block__container {
     max-height: none;
-    min-height: 100vh;
-    width: 100%;
+    padding: 0;
+    margin: 0;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -80,7 +92,7 @@ a {
 }
 .block__bg {
   background: url("../img/bg.jpg") no-repeat left/cover;
-  width: 608px;
+  width: 55%;
   padding: 2.5rem 2.25rem;
 }
 @media screen and (max-width: 992px) {
@@ -92,8 +104,8 @@ a {
 .block__main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 7.5rem 3.75rem 5.375rem;
+  flex: 1;
 }
 @media screen and (max-width: 992px) {
   .block__main {
@@ -220,6 +232,11 @@ a {
   background-color: #006ca7;
 }
 
+.block-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 .block-form__inputs {
   display: flex;
   margin-bottom: 2.5rem;
@@ -292,7 +309,7 @@ a {
 }
 .block-form__radio-list {
   display: flex;
-  margin-bottom: 7.1875rem;
+  margin-bottom: 10%;
 }
 @media screen and (max-width: 992px) {
   .block-form__radio-list {
@@ -411,6 +428,9 @@ a {
 .block-form__radio-hint-btn:hover + .block-form__hint {
   opacity: 1;
   visibility: visible;
+}
+.block-form__bottom {
+  margin-top: auto;
 }
 .block-form__terms {
   display: flex;

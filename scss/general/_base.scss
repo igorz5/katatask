@@ -55,12 +55,12 @@ $base-fz: 16px;
 }
 
 .main {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
+}
+
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
 }
 
 html {

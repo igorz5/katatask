@@ -1,4 +1,8 @@
 .block-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
   &__inputs {
     display: flex;
     margin-bottom: rem(40px);
@@ -74,7 +78,7 @@
 
   &__radio-list {
     display: flex;
-    margin-bottom: rem(115px);
+    margin-bottom: 10%;
 
     @include screen-medium {
       justify-content: center;
@@ -198,6 +202,10 @@
   &__radio-hint-btn:hover + &__hint {
     opacity: 1;
     visibility: visible;
+  }
+
+  &__bottom {
+    margin-top: auto;
   }
 
   &__terms {
