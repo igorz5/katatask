@@ -2,10 +2,15 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  max-height: 400px;
+
+  @include screen-medium {
+    max-height: none;
+  }
 
   &__inputs {
     display: flex;
-    margin-bottom: rem(40px);
+    margin-bottom: 5vh;
 
     @include screen-medium {
       justify-content: center;
@@ -68,7 +73,7 @@
     color: $grey-500;
     font-size: rem(14px);
     font-weight: 400;
-    margin-bottom: rem(42px);
+    margin-bottom: 4%;
     width: 100%;
 
     @include screen-medium {
@@ -78,11 +83,15 @@
 
   &__radio-list {
     display: flex;
-    margin-bottom: 10%;
+    margin-bottom: 1vh;
+
+    @include screen-large {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
 
     @include screen-medium {
       justify-content: center;
-      flex-wrap: wrap;
     }
 
     @include screen-small {
@@ -99,7 +108,7 @@
     display: flex;
     align-items: center;
 
-    @include screen-medium {
+    @include screen-large {
       margin-bottom: rem(10px);
     }
 
@@ -211,7 +220,7 @@
   &__terms {
     display: flex;
     align-items: center;
-    margin-bottom: rem(48px);
+    margin-bottom: 5vh;
 
     @include screen-medium {
       justify-content: center;
